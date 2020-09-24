@@ -1,6 +1,18 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <body>
-        inquirypage
-    </body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}お問い合わせ | Private Diary{% endblock %}
+
+
+{% block contents %}
+  <div class="container">
+  <br><br><br>
+    <section>
+    <form action="{% url 'diary:inquiry' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-primary my-2" type="submit" value="click"></td></tr>
+    </form>
+    </section>
+  </div>
+{% endblock %}
