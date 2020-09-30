@@ -168,6 +168,3 @@ ACCOUNT_EMAIL_REQUIRED = True
 #ログイン／ログアウト時の遷移先の設定
 LOGIN_REDIRECT_URL = 'diary:index'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
-
-
-
