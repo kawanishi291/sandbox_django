@@ -85,6 +85,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+#Heroku上にある環境変数を設定するための機能
 import dj_database_url
 db_from_env = dj_database_url.config()
 DATABASES = {
@@ -174,6 +176,7 @@ ACCOUNT_EMAIL_REQUIRED = True
 LOGIN_REDIRECT_URL = 'diary:index'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
 
+#STATIC_ROOTに全てのスタティックフォルダーを集めて登録
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = (
