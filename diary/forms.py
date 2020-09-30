@@ -1,5 +1,6 @@
 from django import forms
 from django.core.mail import EmailMessage
+from .models import Diary
 
 
 class InquiryForm(forms.Form):
@@ -41,3 +42,8 @@ class InquiryForm(forms.Form):
 
         message = EmailMessage(subject=subject, body=message, from_email=from_email, to=to_list, cc=cc_list)
         message.send()
+
+class DiaryForm(forms.ModelForm):
+    class Meta:
+        model = Diary
+        fields = ['user', 'title', 'content', 'photo1', 'photo2', 'photo3']
