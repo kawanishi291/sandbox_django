@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.urls import reverse_lazy
 from django.views import generic
 
-from .forms import InquiryForm, DiaryForm
+from .forms import InquiryForm, DiaryCreateForm
 
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView
 from .models import Diary
@@ -30,13 +30,13 @@ class DiaryList(ListView):
     
 class DiaryCreate(CreateView):
     model = Diary
-    form_class = DiaryForm
+    form_class = DiaryCreateForm
     template_name = "diary_create.html"
     success_url = reverse_lazy('diary:diary_list')
     
 class DiaryUpdate(UpdateView):
     model = Diary
-    form_class = DiaryForm
+    form_class = DiaryCreateForm
     template_name = "diary_update.html"
     success_url = reverse_lazy('diary:diary_list')
     
