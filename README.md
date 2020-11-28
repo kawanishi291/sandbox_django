@@ -64,11 +64,13 @@ django-bootstrap-datepicker-plusをインストールし、フォームクラス
 ```
 pip install django-bootstrap-datepicker-plus
 ```
-参考サイト:[[Django] 日付入力欄をカレンダー形式にする (bootstrap-datetimepicker)](https://qiita.com/okoppe8/items/999b8e3c86708fbb3926)
+参考サイト:
+
+[[Django] 日付入力欄をカレンダー形式にする (bootstrap-datetimepicker)](https://qiita.com/okoppe8/items/999b8e3c86708fbb3926)
 
  
 
-> **DjangoにおけるDB操作_クエリメソッド（QueryAPI）_**
+> **DjangoにおけるDB操作 クエリメソッド（QueryAPI）**
 
 参考サイト:
 
