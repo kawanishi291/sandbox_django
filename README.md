@@ -55,9 +55,8 @@ Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/
 * 利用時の必要事項ページ作成
 
 
-# proconEF($の付いているものはターミナルかコマンドプロンプトで実行)
-
 # info
+
 > **日付入力をカレンダー方式にする方法**
 
 django-bootstrap-datepicker-plusをインストールし、フォームクラス上のwidgetにライブラリのクラスを指定
@@ -68,7 +67,6 @@ pip install django-bootstrap-datepicker-plus
 
 [[Django] 日付入力欄をカレンダー形式にする (bootstrap-datetimepicker)](https://qiita.com/okoppe8/items/999b8e3c86708fbb3926)
 
- 
 
 > **DjangoにおけるDB操作 クエリメソッド（QueryAPI）**
 
@@ -78,9 +76,15 @@ pip install django-bootstrap-datepicker-plus
 
 [Django データベース操作 についてのまとめ](https://qiita.com/okoppe8/items/66a8747cf179a538355b)
 
+> **DjangoにおけるSESSION利用法**
+
+参考サイト:
+
+[【Django】Sessionの使い方（基本編）](https://idealive.jp/blog/2018/11/21/%E3%80%90django%E3%80%91session%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%EF%BC%88%E5%9F%BA%E6%9C%AC%E7%B7%A8%EF%BC%89/)
 
 
-# Gitコマンド&流れ(エラーや質問は森正or斉藤へ)
+# proconEF($の付いているものはターミナルかコマンドプロンプトで実行)
+* Gitコマンド&流れ(エラーや質問は森正or斉藤へ)
 ## 11/4日にやること(1回のみ！！！)
 ```
 1. 翔ちゃんのGithub(proconEF)をForkする
