@@ -1,10 +1,5 @@
 # sandbox_python
 
-* Python 3.6.5
-* pyxel 1.0.2
- 
-Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/) is tested.
-
 # 今後の予定
     
 > **既存の機能**
@@ -139,7 +134,9 @@ python manage.py runserver #サーバー起動
 
 ## DB削除
 
-全てのアプリケーションの*migrations*フォルダ内の*0001_initial*を削除
+1. 全てのアプリケーションの*migrations*フォルダ内の*0001_initial.py*を削除
+2. 以下のコマンドを実行
 ```
 $ rm db.sqlite3 #データベースを削除
 ```
+3. 上の4つの**Djangoコマンド**を実行
