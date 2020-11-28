@@ -7,7 +7,7 @@ Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/
 
 # 今後の予定
     
-> **●既存の機能**
+> **既存の機能**
 
 **○オーナーの予約可能時間設定**
 
@@ -40,13 +40,13 @@ Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/
 * 車から検索
 * 時間から検索
 
-> **●新機能最低３つ**
+> **新機能最低３つ**
 
 * メール送信
 * 電気自動車
 * 特殊車両
 
-> **●デザイン**
+> **デザイン**
 
 * メディアクエリに対応させる為、cssを分解
 * 動画や画像で使い方を説明
