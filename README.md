@@ -7,7 +7,7 @@ Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/
 
 # 今後の予定
     
-> **既存の機能**
+> 既存の機能
 
 **○オーナーの予約可能時間設定**
 
