@@ -58,106 +58,13 @@ Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/
 # proconEF($の付いているものはターミナルかコマンドプロンプトで実行)
 
 # info
-__*carsharing_req(カーシェアリング利用登録)*__
-*ボス*
-1. models.pyにCarsharUserModel[class]を追加
-2. forms.pyを作成し、models.pyで作ったmodelをimport
-```bash
-from.models import CarsharUserModel
+> **日付入力をカレンダー方式にする方法**
+django-bootstrap-datepicker-plusをインストールし、フォームクラス上のwidgetにライブラリのクラスを指定
 ```
-3. forms.pyにCarsharUserModelを継承させたCarsharUserCreateForm[class]を記入
-```bash
-class CarsharUserCreateForm(forms.ModelForm):
-    class Meta:
-        model = CarsharUserModel
-        fields = ['id', 'name', 'mail', ... ]
+pip install django-bootstrap-datepicker-plus
 ```
+参考サイト:[[Django] 日付入力欄をカレンダー形式にする (bootstrap-datetimepicker)](https://qiita.com/okoppe8/items/999b8e3c86708fbb3926)
 
-2. views.pyにTemplateViewをimport
-```bash
-from django.views.generic import TemplateView
-```
-3. views.pyにCarsharUser[class]を宣言(TemplateViewを使用)
-4. views.pyのCarsharUser[class]にコンストラクタを設定
-```bash
-def __init__(self):
-        self.params = {
-            'title': 'タイトル',
-        }
-```
-params内に使用変数を定義
-
-4. urls.pyにviews.py内で宣言したCarsharUser[class]をimport
-```bash
-from .views import CarsharUser
-```
-5. urls.pyに以下の記述でアプリケーション名を追記
-```bash
-app_name = 'carsharing_req'
-```
-6. urls.pyにCarsharUserclassのディレクトリを追記
-```bash
-path('index/', CarsharUser.as_view(), name='index')
-```
-
-7. ルートディレクトリ直下のtemplatesフォルダ内にcarsharing_reqフォルダを作成
-```bash
-$ mkdir carsharing_req
-```
-8. carsharing_reqフォルダ内にindex.htmlを作成
-```bash
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-    <title>{{ title }}</title>
-</head>
-<body class="container">
-    <h1 class="display-4 text-primary">{{ title }}</h1>
-    <p class="h5 mt-4">{{ message|safe }}</p>
-    <form action="{% url 'index' %}" method="post">
-        {% csrf_token %}
-        {{ form.as_table }}
-        <input class="btn btn-primary my-2" type="submit" value="click">
-    </form>
-</body>
-</html>
-```
-9. さあ、runserverしてみよう
-
-__*carsharing_booking(カーシェア予約)*__
-*おおにしちゃん＆はっしー*
-
-
-__*owners_req(カーシェアオーナー申請)*__
-*おおにしちゃん*
-1. ログインしているか確認するコントローラ[views.py]
-2. DBへ登録する内容のClass[models.py]
-3. 登録画面のフォーム[forms.py]
-4. バリデーション機能[views.py]
-5. オーナー詳細画面[views.py]
-6. 変更コントローラ（登録と同様に）[views.py]
-7. 削除コントローラ（登録と同様に）[views.py]
-8. HTMLのコンポーネント化[base.html]の継承
-9. デザイン変更
-
-
-__*parking_req(駐車場オーナー申請)*__
-*はっしー*
-1. ログインしているか確認するコントローラ[views.py]
-2. DBへ登録する内容の駐車場登録Class追加[models.py]
-3. 登録画面のフォーム[forms.py]
-4. バリデーション機能[views.py]
-5. オーナー詳細画面[views.py]
-6. 変更コントローラ（登録と同様に）[views.py]
-7. 削除コントローラ（登録と同様に）[views.py]
-8. HTMLのコンポーネント化[base.html]の継承
-9. デザイン変更
-
-
-__*secondhandcar(中古車提案)*__
-*ボス*
 
 
 # Gitコマンド&流れ(エラーや質問は森正or斉藤へ)
