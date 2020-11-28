@@ -8,14 +8,14 @@
 
 - ***pullした時に以下のように、「＋」や「ー」が表示されているか確認すること！！！！***
 
-```templates/carsharing_req/base.html  | 97 ++++++++++++++++++++--------```
+    ```templates/carsharing_req/base.html  | 97 ++++++++++++++++++++--------```
 
 - ***不安ならもう一度pullしてみて以下のような表示ならOK***
-```
-From https://github.com/kawanishi291/proconEF
-* branch            django     -> FETCH_HEAD
-Already up to date.
-```
+    ```
+    From https://github.com/kawanishi291/proconEF
+    * branch            django     -> FETCH_HEAD
+    Already up to date.
+    ```
 
 - ***Teamsで連絡した際、既読後スタンプで反応すること***
 
