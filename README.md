@@ -8,11 +8,11 @@
 
 - ***pullした時に上記のような＋とーが表示されているか確認すること！！！！***
    - *不安ならもう一度pullしてみて以下のような表示ならOK*
-```
-From https://github.com/kawanishi291/proconEF
-* branch            django     -> FETCH_HEAD
-Already up to date.
-```
+   ```
+   From https://github.com/kawanishi291/proconEF
+   * branch            django     -> FETCH_HEAD
+   Already up to date.
+   ```
 
 - ***作業前に "必ず" どのファイルを編集するか伝えること！***
 
