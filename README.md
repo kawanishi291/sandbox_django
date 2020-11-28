@@ -6,19 +6,16 @@
 
 - ***作業前に "必ず" どのファイルを編集するか伝えること！***
 
-```templates/carsharing_req/base.html  | 97 ++++++++++++++++++++--------```
-
-- ***pullした時に上記のような＋とーが表示されているか確認すること！！！！***
-
+- ***pullした時に以下のように、「＋」や「ー」が表示されているか確認すること！！！！***
 
 ```templates/carsharing_req/base.html  | 97 ++++++++++++++++++++--------```
 
-   - *不安ならもう一度pullしてみて以下のような表示ならOK*
-   ```
-   From https://github.com/kawanishi291/proconEF
-   * branch            django     -> FETCH_HEAD
-   Already up to date.
-   ```
+- ***不安ならもう一度pullしてみて以下のような表示ならOK***
+```
+From https://github.com/kawanishi291/proconEF
+* branch            django     -> FETCH_HEAD
+Already up to date.
+```
 
 - ***Teamsで連絡した際、既読後スタンプで反応すること***
 
