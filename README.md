@@ -3,11 +3,11 @@
 
 # 冬休み期間のお願い
 
-- ***pullした時に以下のような＋とーが表示されているか確認すること！！！！***
 
 ```templates/carsharing_req/base.html  | 97 ++++++++++++++++++++--------```
 
-   - *不安ならもう一度pullしてみて以下のような表示ならOK
+- ***pullした時に上記のような＋とーが表示されているか確認すること！！！！***
+   - *不安ならもう一度pullしてみて以下のような表示ならOK*
 ```
 From https://github.com/kawanishi291/proconEF
 * branch            django     -> FETCH_HEAD
