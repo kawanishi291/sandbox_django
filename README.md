@@ -3,13 +3,14 @@
 
 # 冬休み期間のお願い
 
-- ***pullした時に
-``` templates/carsharing_req/base.html  | 97 ++++++++++++++++++++--------```
-のような＋とーが表示されているか確認すること！！！！***
-    - *不安ならもう一度pullしてみて以下のような表示ならOK*
-    ``` From https://github.com/kawanishi291/proconEF
-    * branch            django     -> FETCH_HEAD
-    Already up to date.```
+- ***pullした時に以下のような＋とーが表示されているか確認すること！！！！***
+```templates/carsharing_req/base.html  | 97 ++++++++++++++++++++--------```
+    - *不安ならもう一度pullしてみて以下のような表示ならOK
+```
+From https://github.com/kawanishi291/proconEF
+* branch            django     -> FETCH_HEAD
+Already up to date.
+```
 
 - ***作業前に "必ず" どのファイルを編集するか伝えること！***
 
