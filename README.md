@@ -59,11 +59,22 @@ Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/
 
 # info
 > **日付入力をカレンダー方式にする方法**
+
 django-bootstrap-datepicker-plusをインストールし、フォームクラス上のwidgetにライブラリのクラスを指定
 ```
 pip install django-bootstrap-datepicker-plus
 ```
 参考サイト:[[Django] 日付入力欄をカレンダー形式にする (bootstrap-datetimepicker)](https://qiita.com/okoppe8/items/999b8e3c86708fbb3926)
+
+ 
+
+> **DjangoにおけるDB操作_クエリメソッド（QueryAPI）_**
+
+参考サイト:
+
+[Django逆引きチートシート（QuerySet編）](https://qiita.com/uenosy/items/54136aff0f6373957d22#%E6%A4%9C%E7%B4%A2%E7%B3%BB)
+
+[Django データベース操作 についてのまとめ](https://qiita.com/okoppe8/items/66a8747cf179a538355b)
 
 
 
