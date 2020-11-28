@@ -1,6 +1,6 @@
 # sandbox_python
 
-# 冬休み期間のお願い:christmas_tree:
+# :christmas_tree:冬休み期間のお願い:christmas_tree:
 
 
 - ***作業前に "必ず" どのファイルを編集するか伝えること！***
