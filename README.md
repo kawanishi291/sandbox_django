@@ -137,3 +137,9 @@ python manage.py createsuperuser #管理者アカウントの作成
 python manage.py runserver #サーバー起動
 ```
 
+## DB削除
+
+全てのアプリケーションの*migrations*フォルダ内の*0001_initial*を削除
+```
+$ rm db.sqlite3 #データベースを削除
+```
