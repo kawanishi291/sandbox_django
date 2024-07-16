@@ -32,11 +32,10 @@ def get_strike_through_text(file_path, sheet_name, cell_address):
         root = ET.fromstring(sheet_xml)
 
         # セルのアドレスを指定して対象のセルを検索
-        cell_ref = f'{cell_address[0]}{int(cell_address[1:])}'
         strike_through_text = []
         for row in root.iter('{http://schemas.openxmlformats.org/spreadsheetml/2006/main}row'):
-            for c in row:
-                if c.attrib.get('r') == cell_ref:
+            for c in row.iter('{http://schemas.openxmlformats.org/spreadsheetml/2006/main}c'):
+                if c.attrib.get('r') == cell_address:
                     # セルのリッチテキストを取得
                     for r in c.iter('{http://schemas.openxmlformats.org/spreadsheetml/2006/main}r'):
                         text_element = r.find('{http://schemas.openxmlformats.org/spreadsheetml/2006/main}t')
